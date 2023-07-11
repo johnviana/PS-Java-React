@@ -16,4 +16,8 @@ public class ContaService {
     public List<Conta> listarContra(){
         return  contaRepopsitory.findAll();
     }
+
+    public Conta salvar(Conta conta){
+        return contaRepopsitory.save(conta);
+    }
 }
