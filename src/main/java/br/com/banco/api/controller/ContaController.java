@@ -20,4 +20,10 @@ public class ContaController {
         return contaService.salvar(conta);
     }
 
+    @GetMapping("/{id}")
+    public Conta buscarConta(@PathVariable Long id){
+        Conta conta = contaService.buscarOuFalhar(id);
+        return conta;
+    }
+
 }
