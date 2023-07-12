@@ -14,7 +14,7 @@ public class ContaService {
     @Autowired
     private ContaRepopsitory contaRepopsitory;
 
-    public List<Conta> listarContra(){
+    public List<Conta> listarConta(){
         return  contaRepopsitory.findAll();
     }
 
