@@ -12,11 +12,16 @@ import javax.persistence.*;
 public class Conta {
 
     @Id
-    @Column(name = "id_conta", nullable = false)
+    @Column(name = "id", nullable = false)
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idConta;
+    private Long id;
 
     @Column(nullable = false)
     private String nome_responsavel;
+
+    @Column(nullable = false)
+    private Long numero;
+
+
 }
