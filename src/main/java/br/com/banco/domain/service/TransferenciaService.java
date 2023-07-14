@@ -27,5 +27,9 @@ public class TransferenciaService {
         return transferenciaRepository.findByDataTransferenciaBetween(startDate, endDate);
     }
 
+    public List<Transferencia> obterTransferenciasPorNomeOperador(String nomeOperadorTransacao) {
+        return transferenciaRepository.findByNomeOperadorTransacao(nomeOperadorTransacao);
+    }
+
 
 }
