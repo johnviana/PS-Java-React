@@ -2,6 +2,9 @@ package br.com.banco.domain.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
+/**
+ * @author johnv
+ */
 
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 public class NegocioException  extends RuntimeException{

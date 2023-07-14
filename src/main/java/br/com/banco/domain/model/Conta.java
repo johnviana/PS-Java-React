@@ -5,6 +5,11 @@ import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 
+/**
+ * @author johnv
+ */
+
+
 @Data
 @Entity
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)

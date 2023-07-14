@@ -7,6 +7,10 @@ import org.springframework.stereotype.Repository;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * @author johnv
+ */
+
 @Repository
 public interface TransferenciaRepository extends JpaRepository<Transferencia, Long> {
 
@@ -18,6 +22,5 @@ public interface TransferenciaRepository extends JpaRepository<Transferencia, Lo
 
     List<Transferencia> findByDataTransferenciaBetweenAndNomeOperadorTransacao(
             LocalDateTime startDate, LocalDateTime endDate, String nomeOperadorTransacao);
-
 
 }
