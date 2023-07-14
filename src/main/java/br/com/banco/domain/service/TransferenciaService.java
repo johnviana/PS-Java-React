@@ -18,6 +18,9 @@ public class TransferenciaService {
     @Autowired
     private  TransferenciaRepository transferenciaRepository;
 
+    public List<Transferencia> obterTodasTransferencias() {
+        return transferenciaRepository.findAll();
+    }
 
     public List<Transferencia> obterTransferenciasPorConta(Long contaId) {
         return transferenciaRepository.findByContaId(contaId);
