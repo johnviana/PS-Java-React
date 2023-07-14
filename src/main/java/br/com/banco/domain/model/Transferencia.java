@@ -20,8 +20,8 @@ public class Transferencia {
     @Column(nullable = false)
     private Long id;
 
-    @Column(nullable = false)
-    private LocalDateTime data_transferencia;
+    @Column(name = "data_transferencia", nullable = false, columnDefinition = "datetime")
+    private LocalDateTime dataTransferencia;
 
     @Column(nullable = false)
     private BigDecimal valor;
@@ -30,7 +30,7 @@ public class Transferencia {
     private String tipo;
 
     @Column(nullable = false)
-    private String nome_operador_transacao;
+    private String nomeOperadorTransacao;
 
     @ManyToOne
     @JoinColumn(name = "conta_id", nullable = false)
