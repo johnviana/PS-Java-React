@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface TransferenciaRepository extends JpaRepository<Transferencia, Long>, TransferenciaRepositoryQueries {
+public interface TransferenciaRepository extends JpaRepository<Transferencia, Long> {
 
     List<Transferencia> findByContaId(Long contaId);
 
